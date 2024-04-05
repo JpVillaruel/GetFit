@@ -6,7 +6,9 @@
     <string name="get_start_btn">Get Start</string>
     <string name="content_desc">Picture</string>
     <string name="day_1">Day 1</string>
-    <string name="chest">chest muscles</string>
+    <string name="chest">chest Exercise</string>
+    <string name="day_2">Day 2</string>
+    <string name="back">back Exercise</string>
     <string name="home">Home</string>
     <string name="tools">Tools</string>
     <string name="exeName">Exercise Name</string>
@@ -56,6 +58,24 @@
         <item>10x</item>
         <item>10x</item>
     </string-array>
+
+    <string-array name="BackExerciseName">
+        <item>arm circles</item>
+        <item>posterior plank</item>
+        <item>hip-hinge hold</item>
+        <item>Cobra</item>
+        <item>Push-up with rotation</item>
+    </string-array>
+
+    <string-array name="BackExerciseReps">
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+    </string-array>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
