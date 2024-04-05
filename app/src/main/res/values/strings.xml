@@ -9,7 +9,8 @@
     <string name="chest">chest muscles</string>
     <string name="home">Home</string>
     <string name="tools">Tools</string>
-
+    <string name="exeName">Exercise Name</string>
+    <string name="exeReps">10x</string>
     <string-array name="routineDays">
         <item>Day 1:</item>
         <item>Day 2:</item>

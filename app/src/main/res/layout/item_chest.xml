@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
+        app:cardElevation="8dp"
         >
 
         <LinearLayout
@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="@string/day_1"
+                    android:text="@string/exeName"
                     android:textAllCaps="true"
                     android:textColor="@color/neutral"
                     android:textSize="15sp" />
@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="@string/chest"
+                    android:text="@string/exeReps"
                     android:textAllCaps="true"
                     android:textColor="@color/neutral"
                     android:textSize="15sp" />
