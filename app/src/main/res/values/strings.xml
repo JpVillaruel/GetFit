@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">getFit</string>
+    <string name="app_name2">GetFit</string>
+    <string name="quote_line_one">Be your Ideal Body</string>
+    <string name="quote_line_two">by Exercising at home</string>
+    <string name="get_start_btn">Get Start</string>
+    <string name="content_desc">Picture</string>
+    <string name="day_1">Day 1</string>
+    <string name="chest">chest muscles</string>
+    <string name="home">Home</string>
+    <string name="tools">Tools</string>
+
+    <string-array name="routineDays">
+        <item>Day 1:</item>
+        <item>Day 2:</item>
+        <item>Day 3:</item>
+        <item>Day 4:</item>
+        <item>Day 5:</item>
+        <item>Day 6:</item>
+        <item>Day 7:</item>
+    </string-array>
+
+    <string-array name="routineName">
+        <item>chest</item>
+        <item>back</item>
+        <item>abs</item>
+        <item>rest</item>
+        <item>arm</item>
+        <item>leg</item>
+        <item>rest</item>
+    </string-array>
+
+    <string-array name="ChestExerciseName">
+        <item>push-up</item>
+        <item>box push-up</item>
+        <item>cobra stretch</item>
+        <item>diamond push-up</item>
+        <item>push-up with rotation</item>
+        <item>spider-man push-up</item>
+        <item>raised legs push-up</item>
+        <item>mountain climber</item>
+        <item>decline push-up</item>
+        <item>incline push-up</item>
+    </string-array>
+
+    <string-array name="ChestExerciseReps">
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
