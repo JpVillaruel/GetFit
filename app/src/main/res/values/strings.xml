@@ -10,6 +10,8 @@
     <string name="day_2">Day 2</string>
     <string name="back">back Exercise</string>
     <string name="day_3">Day 3</string>
+    <string name="abs">Abs Exercise</string>
+    <string name="day_5">Day 5</string>
     <string name="arm">arm Exercise</string>
     <string name="home">Home</string>
     <string name="tools">Tools</string>
@@ -70,6 +72,28 @@
     </string-array>
 
     <string-array name="BackExerciseReps">
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
+    </string-array>
+
+    <string-array name="AbsExerciseName">
+        <item>reverse crunches</item>
+        <item>leg raises</item>
+        <item>high plank</item>
+        <item>cobra</item>
+        <item>push-up</item>
+        <item>bridge</item>
+        <item>scissors</item>
+        <item>high knees running</item>
+    </string-array>
+
+    <string-array name="AbsExerciseReps">
+        <item>10x</item>
+        <item>10x</item>
+        <item>10x</item>
         <item>10x</item>
         <item>10x</item>
         <item>10x</item>

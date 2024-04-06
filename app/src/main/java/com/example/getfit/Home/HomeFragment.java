@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.getfit.Abs.AbsRoutines;
 import com.example.getfit.Arm.ArmRoutines;
 import com.example.getfit.Back.BackRoutines;
 import com.example.getfit.Chest.ChestRoutines;
@@ -64,8 +65,12 @@ public class HomeFragment extends Fragment implements ExerciseInterface {
             case 1:
                 intent = new Intent(getContext(), BackRoutines.class);
                 break;
+            case 2:
+                intent = new Intent(getContext(), AbsRoutines.class);
+                break;
             case 4:
                 intent = new Intent(getContext(), ArmRoutines.class);
+                break;
             // Add more cases for additional items as needed
         }
 

@@ -17,7 +17,7 @@ public class ArmRoutines extends AppCompatActivity {
     ArrayList<ArmItem> armExerciseItems = new ArrayList<>();
 
     int[] armExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest,
-            R.drawable.rest, R.drawable.rest, R.drawable.rest,R.drawable.rest,R.drawable.rest};
+            R.drawable.rest, R.drawable.rest};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

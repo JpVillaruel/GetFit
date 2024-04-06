@@ -14,8 +14,7 @@ public class BackRoutines extends AppCompatActivity {
 
     ArrayList<BackItem> backExerciseItems = new ArrayList<>();
 
-    int[] backExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest,
-            R.drawable.rest, R.drawable.rest, R.drawable.rest,R.drawable.rest,R.drawable.rest};
+    int[] backExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest};
 
 
     @Override
