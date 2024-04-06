@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment implements ExerciseInterface {
             case 1:
                 intent = new Intent(getContext(), BackRoutines.class);
                 break;
-            case 2:
+            case 4:
                 intent = new Intent(getContext(), ArmRoutines.class);
             // Add more cases for additional items as needed
         }
