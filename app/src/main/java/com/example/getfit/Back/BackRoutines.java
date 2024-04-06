@@ -21,10 +21,9 @@ public class BackRoutines extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //      Toolbar Code        //
         setContentView(R.layout.activity_back_routines);
 
+        //      Toolbar Code        //
         Toolbar toolbar = findViewById(R.id.toolbarr);
         setSupportActionBar(toolbar);
 

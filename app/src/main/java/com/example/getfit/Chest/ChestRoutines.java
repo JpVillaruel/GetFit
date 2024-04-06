@@ -27,10 +27,9 @@ public class ChestRoutines extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-                //      Toolbar Code        //
         setContentView(R.layout.activity_chest_routines);
 
+                //      Toolbar Code        //
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

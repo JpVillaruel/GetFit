@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import com.example.getfit.Arm.ArmRoutines;
 import com.example.getfit.Back.BackRoutines;
 import com.example.getfit.Chest.ChestRoutines;
 import com.example.getfit.R;
@@ -64,11 +64,9 @@ public class HomeFragment extends Fragment implements ExerciseInterface {
             case 1:
                 intent = new Intent(getContext(), BackRoutines.class);
                 break;
+            case 2:
+                intent = new Intent(getContext(), ArmRoutines.class);
             // Add more cases for additional items as needed
-
-            default:
-                Toast.makeText(getContext(), "Rest Day", Toast.LENGTH_SHORT).show();
-                break;
         }
 
 
