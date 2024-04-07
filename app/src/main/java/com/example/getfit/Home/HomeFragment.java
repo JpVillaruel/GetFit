@@ -15,6 +15,7 @@ import com.example.getfit.Home.Abs.AbsRoutines;
 import com.example.getfit.Home.Arm.ArmRoutines;
 import com.example.getfit.Home.Back.BackRoutines;
 import com.example.getfit.Home.Chest.ChestRoutines;
+import com.example.getfit.Home.Leg.LegRoutines;
 import com.example.getfit.R;
 
 import java.util.ArrayList;
@@ -70,6 +71,9 @@ public class HomeFragment extends Fragment implements ExerciseInterface {
                 break;
             case 4:
                 intent = new Intent(getContext(), ArmRoutines.class);
+                break;
+            case 5:
+                intent = new Intent(getContext(), LegRoutines.class);
                 break;
             // Add more cases for additional items as needed
         }

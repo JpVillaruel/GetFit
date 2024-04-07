@@ -64,7 +64,6 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/exeReps"
-                    android:textAllCaps="true"
                     android:textColor="@color/neutral"
                     android:textSize="15sp" />
             </LinearLayout>

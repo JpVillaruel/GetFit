@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">getFit</string>
+    <string name="app_name">GetFit</string>
     <string name="app_name2">GetFit</string>
     <string name="quote_line_one">Be your Ideal Body</string>
     <string name="quote_line_two">by Exercising at home</string>
@@ -13,6 +13,8 @@
     <string name="abs">Abs Exercise</string>
     <string name="day_5">Day 5</string>
     <string name="arm">arm Exercise</string>
+    <string name="day_6">Day 6</string>
+    <string name="leg">leg Exercise</string>
     <string name="home">Home</string>
     <string name="tools">Tools</string>
     <string name="exeName">Exercise Name</string>
@@ -51,16 +53,16 @@
     </string-array>
 
     <string-array name="ChestExerciseReps">
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
     </string-array>
 
     <string-array name="BackExerciseName">
@@ -72,11 +74,11 @@
     </string-array>
 
     <string-array name="BackExerciseReps">
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
     </string-array>
 
     <string-array name="AbsExerciseName">
@@ -91,14 +93,14 @@
     </string-array>
 
     <string-array name="AbsExerciseReps">
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
     </string-array>
 
     <string-array name="ArmExerciseName">
@@ -113,14 +115,36 @@
     </string-array>
 
     <string-array name="ArmExerciseReps">
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
-        <item>10x</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+    </string-array>
+
+    <string-array name="LegExerciseName">
+        <item>scissors</item>
+        <item>high knees running</item>
+        <item>squat</item>
+        <item>wall sit</item>
+        <item>pile squat</item>
+        <item>punches</item>
+        <item>straight right leg raise</item>
+        <item>straight left leg raise</item>
+    </string-array>
+
+    <string-array name="LegExerciseReps">
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>00:30</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
+        <item>x10</item>
     </string-array>
 
 
