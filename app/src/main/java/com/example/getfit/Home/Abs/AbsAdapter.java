@@ -1,4 +1,4 @@
-package com.example.getfit.Abs;
+package com.example.getfit.Home.Abs;
 
 import android.content.Context;
 import android.view.LayoutInflater;

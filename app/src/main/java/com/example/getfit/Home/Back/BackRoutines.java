@@ -1,4 +1,4 @@
-package com.example.getfit.Back;
+package com.example.getfit.Home.Back;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

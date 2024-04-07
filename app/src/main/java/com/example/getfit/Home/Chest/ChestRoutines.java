@@ -1,4 +1,4 @@
-package com.example.getfit.Chest;
+package com.example.getfit.Home.Chest;
 
 import androidx.appcompat.app.AppCompatActivity;
 

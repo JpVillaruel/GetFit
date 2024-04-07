@@ -1,4 +1,4 @@
-package com.example.getfit.Arm;
+package com.example.getfit.Home.Arm;
 
 public class ArmItem {
 

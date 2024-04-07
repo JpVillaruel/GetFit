@@ -1,4 +1,4 @@
-package com.example.getfit.Chest;
+package com.example.getfit.Home.Chest;
 
 import android.content.Context;
 import android.view.LayoutInflater;

@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.getfit.Abs.AbsRoutines;
-import com.example.getfit.Arm.ArmRoutines;
-import com.example.getfit.Back.BackRoutines;
-import com.example.getfit.Chest.ChestRoutines;
+import com.example.getfit.Home.Abs.AbsRoutines;
+import com.example.getfit.Home.Arm.ArmRoutines;
+import com.example.getfit.Home.Back.BackRoutines;
+import com.example.getfit.Home.Chest.ChestRoutines;
 import com.example.getfit.R;
 
 import java.util.ArrayList;

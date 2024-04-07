@@ -1,4 +1,4 @@
-package com.example.getfit.Arm;
+package com.example.getfit.Home.Arm;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

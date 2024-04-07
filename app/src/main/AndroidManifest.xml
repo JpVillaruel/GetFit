@@ -13,16 +13,16 @@
         android:theme="@style/Theme.GetFit"
         tools:targetApi="31">
         <activity
-            android:name=".Abs.AbsRoutines"
+            android:name=".Home.Abs.AbsRoutines"
             android:exported="false" />
         <activity
-            android:name=".Arm.ArmRoutines"
+            android:name=".Home.Arm.ArmRoutines"
             android:exported="false" />
         <activity
-            android:name=".Chest.ChestRoutines"
+            android:name=".Home.Chest.ChestRoutines"
             android:exported="false" />
         <activity
-            android:name=".Back.BackRoutines"
+            android:name=".Home.Back.BackRoutines"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
