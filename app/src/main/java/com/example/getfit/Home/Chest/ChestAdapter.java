@@ -1,11 +1,14 @@
 package com.example.getfit.Home.Chest;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
+
 import com.example.getfit.R;
 
 import androidx.annotation.NonNull;
@@ -36,7 +39,18 @@ public class ChestAdapter extends RecyclerView.Adapter<ChestAdapter.MyViewHolder
     public void onBindViewHolder(@NonNull ChestAdapter.MyViewHolder holder, int position) {
         holder.chestExerciseName.setText(chestItems.get(position).chestExerciseName);
         holder.chestExerciseReps.setText(chestItems.get(position).chestExerciseReps);
-        holder.chestExerciseView.setImageResource(chestItems.get(position).chestExerciseVid);
+        holder.chestExerciseView.setVideoURI(Uri.parse("android.resource://" + context.getPackageName() + "/" + chestItems.get(position).chestExerciseVid));
+        holder.chestExerciseView.setOnPreparedListener(mediaPlayer -> {
+            // Ensure looping
+            mediaPlayer.setLooping(true);
+        });
+
+        // Set up video completion listener
+        holder.chestExerciseView.setOnCompletionListener(mediaPlayer -> {
+            // Restart video when completed
+            holder.chestExerciseView.start();
+        });
+        holder.chestExerciseView.start();
     }
 
     @Override
@@ -46,12 +60,12 @@ public class ChestAdapter extends RecyclerView.Adapter<ChestAdapter.MyViewHolder
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView chestExerciseView;
+        VideoView chestExerciseView;
         TextView chestExerciseName, chestExerciseReps;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            chestExerciseView = itemView.findViewById(R.id.ChestExercisePic);
+            chestExerciseView = itemView.findViewById(R.id.ChestExerciseVideo);
             chestExerciseName = itemView.findViewById(R.id.ChestExerciseName);
             chestExerciseReps = itemView.findViewById(R.id.ChestExerciseReps);
         }
