@@ -30,13 +30,14 @@
                 android:layout_marginStart="10dp"
                 >
 
-                <VideoView
+                <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/ChestExerciseVideo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:contentDescription="@string/content_desc"
-                    android:scaleType="fitXY" />
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/push_up"/>
             </LinearLayout>
 
 

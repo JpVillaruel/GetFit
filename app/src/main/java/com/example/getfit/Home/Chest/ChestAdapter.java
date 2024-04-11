@@ -1,15 +1,16 @@
 package com.example.getfit.Home.Chest;
 
 import android.content.Context;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.VideoView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.getfit.R;
+
+import com.airbnb.lottie.LottieCompositionFactory;
+import com.airbnb.lottie.LottieDrawable;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,18 +40,11 @@ public class ChestAdapter extends RecyclerView.Adapter<ChestAdapter.MyViewHolder
     public void onBindViewHolder(@NonNull ChestAdapter.MyViewHolder holder, int position) {
         holder.chestExerciseName.setText(chestItems.get(position).chestExerciseName);
         holder.chestExerciseReps.setText(chestItems.get(position).chestExerciseReps);
-        holder.chestExerciseView.setVideoURI(Uri.parse("android.resource://" + context.getPackageName() + "/" + chestItems.get(position).chestExerciseVid));
-        holder.chestExerciseView.setOnPreparedListener(mediaPlayer -> {
-            // Ensure looping
-            mediaPlayer.setLooping(true);
-        });
-
-        // Set up video completion listener
-        holder.chestExerciseView.setOnCompletionListener(mediaPlayer -> {
-            // Restart video when completed
-            holder.chestExerciseView.start();
-        });
-        holder.chestExerciseView.start();
+        LottieCompositionFactory.fromRawRes(context, chestItems.get(position).chestExerciseVid)
+                .addListener(result -> {
+                    holder.chestExerciseView.setComposition(result);
+                    holder.chestExerciseView.playAnimation();
+                });
     }
 
     @Override
@@ -60,7 +54,7 @@ public class ChestAdapter extends RecyclerView.Adapter<ChestAdapter.MyViewHolder
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        VideoView chestExerciseView;
+        LottieAnimationView chestExerciseView;
         TextView chestExerciseName, chestExerciseReps;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
