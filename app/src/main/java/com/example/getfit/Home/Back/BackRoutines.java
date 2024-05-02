@@ -1,11 +1,12 @@
 package com.example.getfit.Home.Back;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 import com.example.getfit.R;
 
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class BackRoutines extends AppCompatActivity {
 
     ArrayList<BackItem> backExerciseItems = new ArrayList<>();
 
-    int[] backExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest};
+    int[] backExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up};
 
 
     @Override

@@ -1,11 +1,11 @@
 package com.example.getfit.Home.Abs;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.getfit.R;
 
@@ -15,8 +15,8 @@ public class AbsRoutines extends AppCompatActivity {
 
     ArrayList<AbsItem> absExerciseItem = new ArrayList<>();
 
-    int[] absExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest,
-            R.drawable.rest, R.drawable.rest, R.drawable.rest,R.drawable.rest,R.drawable.rest};
+    int[] absExerciseVid = {R.raw.cobra_stretch, R.raw.cobra_stretch, R.raw.cobra_stretch, R.raw.cobra_stretch,
+            R.raw.push_up,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up};
 
 
     @Override

@@ -1,11 +1,11 @@
 package com.example.getfit.Home.Arm;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.getfit.R;
 
@@ -16,8 +16,8 @@ public class ArmRoutines extends AppCompatActivity {
 
     ArrayList<ArmItem> armExerciseItems = new ArrayList<>();
 
-    int[] armExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest,
-            R.drawable.rest, R.drawable.rest, R.drawable.rest};
+    int[] armExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,
+            R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

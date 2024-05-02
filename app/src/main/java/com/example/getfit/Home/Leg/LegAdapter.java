@@ -4,13 +4,17 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.getfit.R;
-
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.airbnb.lottie.LottieAnimationView;
+import com.airbnb.lottie.LottieCompositionFactory;
+import com.example.getfit.Home.LottieAnimationDialogFragment;
+import com.example.getfit.R;
 
 import java.util.ArrayList;
 
@@ -34,9 +38,18 @@ public class LegAdapter extends RecyclerView.Adapter<LegAdapter.legViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull LegAdapter.legViewHolder holder, int position) {
-        holder.legExerciseVid.setImageResource(legItems.get(position).LegExerciseVid);
         holder.legExerciseName.setText(legItems.get(position).LegExerciseName);
         holder.legExerciseReps.setText(legItems.get(position).LegExerciseReps);
+        LottieCompositionFactory.fromRawRes(context, legItems.get(position).getLegExerciseVid())
+                .addListener(result -> {
+                    holder.legExerciseVid.setComposition(result);
+                    holder.legExerciseVid.playAnimation();
+                });
+        holder.cardView.setOnClickListener(view -> {
+            // Show dialog fragment with clicked animation
+            LottieAnimationDialogFragment dialogFragment = LottieAnimationDialogFragment.newInstance(legItems.get(position).getLegExerciseVid());
+            dialogFragment.show(((AppCompatActivity) context).getSupportFragmentManager(), "LottieAnimationDialogFragment");
+        });
     }
 
     @Override
@@ -46,15 +59,16 @@ public class LegAdapter extends RecyclerView.Adapter<LegAdapter.legViewHolder> {
 
     public static class legViewHolder extends RecyclerView.ViewHolder{
 
+        CardView cardView;
         TextView legExerciseName, legExerciseReps;
-        ImageView legExerciseVid;
+        LottieAnimationView legExerciseVid;
 
         public legViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            cardView = itemView.findViewById(R.id.exercises);
             legExerciseName = itemView.findViewById(R.id.LegExerciseName);
             legExerciseReps = itemView.findViewById(R.id.LegExerciseReps);
-            legExerciseVid = itemView.findViewById(R.id.LegExercisePic);
+            legExerciseVid = itemView.findViewById(R.id.LegExerciseVid);
 
         }
     }

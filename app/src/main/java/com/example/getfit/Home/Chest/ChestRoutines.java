@@ -1,12 +1,8 @@
 package com.example.getfit.Home.Chest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
-
 import android.os.Bundle;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,8 +17,8 @@ public class ChestRoutines extends AppCompatActivity {
 
     ArrayList<ChestItem> chestExerciseItems = new ArrayList<>();
 
-    int[] chestExerciseVid = {R.raw.push_up,R.raw.push_up,R.raw.push_up,R.raw.push_up,R.raw.push_up,
-            R.raw.push_up,R.raw.push_up,R.raw.push_up,R.raw.push_up,R.raw.push_up,};
+    int[] chestExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,
+            R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

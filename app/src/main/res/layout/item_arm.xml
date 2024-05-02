@@ -30,14 +30,14 @@
                 android:layout_marginStart="10dp"
                 >
 
-                <ImageView
-                    android:id="@+id/armExercisePic"
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/armExerciseVid"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="@string/content_desc"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rest"
-                    />
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/push_up"/>
             </LinearLayout>
 
 

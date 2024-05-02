@@ -1,11 +1,11 @@
 package com.example.getfit.Home.Leg;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
 
 import com.example.getfit.R;
 
@@ -15,8 +15,8 @@ public class LegRoutines extends AppCompatActivity {
 
     ArrayList<LegItem> legItems = new ArrayList<>();
 
-    int[] legExerciseVid = {R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest, R.drawable.rest,
-            R.drawable.rest, R.drawable.rest, R.drawable.rest};
+    int[] legExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,
+            R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch};
 
 
     @Override
