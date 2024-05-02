@@ -3,9 +3,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/matching_accent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Tool.ToolFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/matching_accent"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bmi_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/primary"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/toolPic"
+                    android:layout_width="50dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_desc"
+                    android:padding="5dp"
+                    android:src="@drawable/scalebmi" />
+
+                <TextView
+                    android:id="@+id/ToolName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="35dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/bmi_calc"
+                    android:textColor="@color/neutral"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_desc"
+                    android:padding="5dp"
+                    android:src="@drawable/angle_right_3916925" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -18,55 +74,6 @@
         android:textColor="@color/secondary"
         />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/bmi_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="5dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/primary"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/toolPic"
-                android:layout_width="50dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/content_desc"
-                android:padding="5dp"
-                android:src="@drawable/scalebmi" />
-
-            <TextView
-                android:id="@+id/ToolName"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_margin="35dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:text="@string/bmi_calc"
-                android:textColor="@color/neutral"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:id="@+id/arrow"
-                android:layout_width="40dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/content_desc"
-                android:padding="5dp"
-                android:src="@drawable/angle_right_3916925" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
    </FrameLayout>
