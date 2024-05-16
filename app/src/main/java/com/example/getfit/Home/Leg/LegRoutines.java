@@ -15,8 +15,8 @@ public class LegRoutines extends AppCompatActivity {
 
     ArrayList<LegItem> legItems = new ArrayList<>();
 
-    int[] legExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,
-            R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch};
+    int[] legExerciseVid = {R.raw.scissors,R.raw.high_kness_running,R.raw.squat,R.raw.wallsit,R.raw.plie_squat,
+            R.raw.punches,R.raw.straigth_rigth_leg_raises,R.raw.straigth_left_leg_raises};
 
 
     @Override

@@ -42,7 +42,7 @@ public class BmiCalculator extends AppCompatActivity {
         String heightStr = editTextHeight.getText().toString();
 
         if (weightStr.isEmpty() || heightStr.isEmpty()) {
-            textViewResult.setText("Please enter both weight and height.");
+            textViewResult.setText("Please fill in the fields");
             return;
         }
 

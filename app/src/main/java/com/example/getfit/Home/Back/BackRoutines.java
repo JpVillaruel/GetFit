@@ -15,7 +15,7 @@ public class BackRoutines extends AppCompatActivity {
 
     ArrayList<BackItem> backExerciseItems = new ArrayList<>();
 
-    int[] backExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up};
+    int[] backExerciseVid = {R.raw.arm_circles,R.raw.posterior_plank,R.raw.hiphinge_hold,R.raw.cobra_stretch,R.raw.pushup_with_rotation};
 
 
     @Override

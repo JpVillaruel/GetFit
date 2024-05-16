@@ -20,7 +20,7 @@
     <string name="exeName">Exercise Name</string>
     <string name="exeReps">10x</string>
     <string name="note">Note: This medical calculator is not intended for children, pregnant or nursing women.</string>
-    <string name="textHeight">Enter Height (kg)</string>
+    <string name="textHeight">Enter Height (cm)</string>
     <string name="textWeight">Enter Weight (kg)</string>
     <string name="calc_btn">CALCULATE</string>
     <string name="bmi_calc">Body Mass Index Calculator (BMI)</string>

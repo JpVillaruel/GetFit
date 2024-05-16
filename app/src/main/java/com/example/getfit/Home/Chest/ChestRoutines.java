@@ -17,8 +17,8 @@ public class ChestRoutines extends AppCompatActivity {
 
     ArrayList<ChestItem> chestExerciseItems = new ArrayList<>();
 
-    int[] chestExerciseVid = {R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,
-            R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up,R.raw.cobra_stretch,};
+    int[] chestExerciseVid = {R.raw.push_ups,R.raw.box_push_ups,R.raw.cobra_stretch,R.raw.diamond_pushup,R.raw.pushup_with_rotation,
+            R.raw.spiderman_pushup,R.raw.raise_leg_pushup,R.raw.mountain_climber,R.raw.decline_pushup,R.raw.incline_pushups,};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

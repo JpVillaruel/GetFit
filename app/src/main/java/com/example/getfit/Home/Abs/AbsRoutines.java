@@ -15,8 +15,8 @@ public class AbsRoutines extends AppCompatActivity {
 
     ArrayList<AbsItem> absExerciseItem = new ArrayList<>();
 
-    int[] absExerciseVid = {R.raw.cobra_stretch, R.raw.cobra_stretch, R.raw.cobra_stretch, R.raw.cobra_stretch,
-            R.raw.push_up,R.raw.push_up,R.raw.cobra_stretch,R.raw.push_up};
+    int[] absExerciseVid = {R.raw.reverse_crunches, R.raw.leg_raises, R.raw.high_plank, R.raw.cobra_stretch,
+            R.raw.push_ups,R.raw.bridge,R.raw.scissors,R.raw.high_kness_running};
 
 
     @Override
